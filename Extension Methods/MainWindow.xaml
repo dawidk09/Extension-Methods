@@ -1,0 +1,24 @@
+﻿<Window x:Class="ExtensionMethods.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExtensionMethods"
+        mc:Ignorable="d"
+        Title="Extension Methods" Height="750" Width="1000" >
+    <Grid>
+        <TextBox x:Name="newSentence" HorizontalAlignment="Left" Margin="30,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Width="780" FontSize="20"/>
+        <Label x:Name="hint" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"  Width="780" FontSize="20" Content="Enter new word or sentence"></Label>
+        <RadioButton x:Name="capitalizeEveryOtherLetter" Content="Capitalize every other letter" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" FontSize="24" Checked="CapitalizeEveryOtherLetter_Checked"/>
+        <RadioButton x:Name="capitalizeFirstLetters" Content="Capitalize first letters" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" FontSize="24" Checked="CapitalizeFirstLetters_Checked"/>
+        <RadioButton x:Name="removeVowels" Content="Remove vowels" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top" FontSize="24" Checked="RemoveVowels_Checked"/>
+        <RadioButton x:Name="findNumberOfWords" Content="Find number of words" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" FontSize="24" Checked="FindNumberOfWords_Checked"/>
+        <RadioButton x:Name="countChars" Content="Count chars" HorizontalAlignment="Left" Margin="10,260,0,0" VerticalAlignment="Top" FontSize="24" Checked="CountChars_Checked"/>
+        <RadioButton x:Name="isSentence" Content="Is sentence?" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" FontSize="24" Checked="IsSentence_Checked"/>
+        <RadioButton x:Name="findMostFrequentLetter" Content="Find most frequent letter" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" FontSize="24" Checked="FindMostFrequentLetter_Checked"/>
+        <ListBox x:Name="wordList" Margin="353,127,50,55" FontSize="20"/>
+        <Button x:Name="add" Content="Add" HorizontalAlignment="Left" Margin="848,29,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Height="29" Width="65" FontSize="20" Click="Add_Click"/>
+        <Button x:Name="reset" Content="Reset" HorizontalAlignment="Left" Margin="848,63,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Height="29" Width="65" FontSize="20" Click="Reset_Click"/>
+
+    </Grid>
+</Window>
